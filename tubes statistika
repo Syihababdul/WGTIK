@@ -1,0 +1,1001 @@
+Months_Inactive_12_mon                                                                                                                      -0.007502633
+Contacts_Count_12_mon                                                                                                                       -0.055471285
+Credit_Limit                                                                                                                                -0.482965071
+Total_Revolving_Bal                                                                                                                          0.624021991
+Avg_Open_To_Buy                                                                                                                             -0.538807748
+Total_Amt_Chng_Q4_Q1                                                                                                                         0.035234835
+Total_Trans_Amt                                                                                                                             -0.083034246
+Total_Trans_Ct                                                                                                                               0.002838112
+Total_Ct_Chng_Q4_Q1                                                                                                                          0.074143210
+Avg_Utilization_Ratio                                                                                                                        1.000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1          -0.178404795
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2           0.178404713
+                                                                                                                                   Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1
+CLIENTNUM                                                                                                                                                                                                                                               -0.0464105098
+Customer_Age                                                                                                                                                                                                                                             0.0181886525
+Dependent_count                                                                                                                                                                                                                                          0.0191890165
+Months_on_book                                                                                                                                                                                                                                           0.0136934978
+Total_Relationship_Count                                                                                                                                                                                                                                -0.1499806221
+Months_Inactive_12_mon                                                                                                                                                                                                                                   0.1534521178
+Contacts_Count_12_mon                                                                                                                                                                                                                                    0.2057720744
+Credit_Limit                                                                                                                                                                                                                                            -0.0238534134
+Total_Revolving_Bal                                                                                                                                                                                                                                     -0.2630325068
+Avg_Open_To_Buy                                                                                                                                                                                                                                         -0.0002673269
+Total_Amt_Chng_Q4_Q1                                                                                                                                                                                                                                    -0.1312073989
+Total_Trans_Amt                                                                                                                                                                                                                                         -0.1686420203
+Total_Trans_Ct                                                                                                                                                                                                                                          -0.3714033526
+Total_Ct_Chng_Q4_Q1                                                                                                                                                                                                                                     -0.2901149551
+Avg_Utilization_Ratio                                                                                                                                                                                                                                   -0.1784047945
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1                                                                                                                       1.0000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2                                                                                                                      -1.0000000000
+                                                                                                                                   Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2
+CLIENTNUM                                                                                                                                                                                                                                                 0.046410475
+Customer_Age                                                                                                                                                                                                                                             -0.018188610
+Dependent_count                                                                                                                                                                                                                                          -0.019189355
+Months_on_book                                                                                                                                                                                                                                           -0.013693505
+Total_Relationship_Count                                                                                                                                                                                                                                  0.149980621
+Months_Inactive_12_mon                                                                                                                                                                                                                                   -0.153451919
+Contacts_Count_12_mon                                                                                                                                                                                                                                    -0.205772484
+Credit_Limit                                                                                                                                                                                                                                              0.023853482
+Total_Revolving_Bal                                                                                                                                                                                                                                       0.263032475
+Avg_Open_To_Buy                                                                                                                                                                                                                                           0.000267398
+Total_Amt_Chng_Q4_Q1                                                                                                                                                                                                                                      0.131207433
+Total_Trans_Amt                                                                                                                                                                                                                                           0.168642171
+Total_Trans_Ct                                                                                                                                                                                                                                            0.371403431
+Total_Ct_Chng_Q4_Q1                                                                                                                                                                                                                                       0.290115136
+Avg_Utilization_Ratio                                                                                                                                                                                                                                     0.178404713
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1                                                                                                                       -1.000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2                                                                                                                        1.000000000
+>   corrplot(cor.BC, method = "color")
+Warning message:
+In corrplot(cor.BC, method = "color") :
+  Not been able to calculate text margin, please try again with a clean new empty window using {plot.new(); dev.off()} or reduce tl.cex
+>   corrplot(cor.BC, method = "color",tl.cex = 0.2)
+>   #Korelasi
+>   cor(BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2,BankChurners$Total_Trans_Ct)
+[1] 0.3714034
+>   cor.test(BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2,BankChurners$Total_Trans_Ct,
++            conf.level = 0.95)
+
+	Pearson's product-moment correlation
+
+data:  BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2 and BankChurners$Total_Trans_Ct
+t = 40.251, df = 10125, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.354491 0.388073
+sample estimates:
+      cor 
+0.3714034 
+
+> library(readr)
+> BankChurners <- read_csv("BankChurners.csv")
+
+── Column specification ────────────────────────────────────
+cols(
+  .default = col_double(),
+  Attrition_Flag = col_character(),
+  Gender = col_character(),
+  Education_Level = col_character(),
+  Marital_Status = col_character(),
+  Income_Category = col_character(),
+  Card_Category = col_character()
+)
+ℹ Use `spec()` for the full column specifications.
+
+> View(BankChurners)
+> # Mengetahui banyaknya NA/NAN pada dataset
+> sum(is.na(BankChurners))
+[1] 0
+> #Install Visualisasi Data
+> library(dplyr)
+> library(ggplot2) # visualisasi data untuk bahasa pemrograman statistik R
+> library(GGally)
+> library(tidyverse)
+> library(treemap)
+> library(purrr)
+> library(corrplot)
+> table(BankChurners$Education_Level)
+
+      College     Doctorate      Graduate   High School 
+         1013           451          3128          2013 
+Post-Graduate    Uneducated       Unknown 
+          516          1487          1519 
+> table(BankChurners$Gender)
+
+   F    M 
+5358 4769 
+> library(readr)
+> BankChurners <- read_csv("BankChurners.csv")
+
+── Column specification ────────────────────────────────────
+cols(
+  .default = col_double(),
+  Attrition_Flag = col_character(),
+  Gender = col_character(),
+  Education_Level = col_character(),
+  Marital_Status = col_character(),
+  Income_Category = col_character(),
+  Card_Category = col_character()
+)
+ℹ Use `spec()` for the full column specifications.
+
+> View(BankChurners)
+> # Mengetahui banyaknya NA/NAN pada dataset
+> sum(is.na(BankChurners))
+[1] 0
+> #Install Visualisasi Data
+> library(dplyr)
+> library(ggplot2) # visualisasi data untuk bahasa pemrograman statistik R
+> library(GGally)
+> library(tidyverse)
+> library(treemap)
+> library(purrr)
+> library(corrplot)
+> table(BankChurners$Education_Level)
+
+      College     Doctorate      Graduate   High School 
+         1013           451          3128          2013 
+Post-Graduate    Uneducated       Unknown 
+          516          1487          1519 
+> table(BankChurners$Gender)
+
+   F    M 
+5358 4769 
+> # Membuat scatter plot dengan 3 fitur pada Bankchurners
+> ggplot(BankChurners, aes(x = Credit_Limit, y = Education_Level, color = Attrition_Flag)) +
++   geom_point(alpha = .9)
+> # Menampilkan Variabel Marital status
+> BankChurners %>%
++   select( Marital_Status,contains("SF")) %>%
++   ggpairs()
+> #Histogram 
+> hist(BankChurners$Avg_Utilization_Ratio)
+> ggplot(BankChurners, aes(x = Credit_Limit, y = Avg_Open_To_Buy )) +
++   geom_point(alpha = .3)
+> ggplot(BankChurners, aes(x = factor(Attrition_Flag), y = Customer_Age )) +
++   geom_boxplot()
+>   #menggunakan metode Bar chart
+>   ggplot(data=BankChurners)+
++     geom_bar(mapping = aes(BankChurners$Income_Category,
++                            fill = as.factor(BankChurners$Attrition_Flag)),
++              position = 'dodge')
+>   #menetukan korelasi antar data numeris
+>   Num.cols <- sapply(BankChurners , is.numeric)
+>   Num.cols
+                                                                                                                         CLIENTNUM 
+                                                                                                                              TRUE 
+                                                                                                                    Attrition_Flag 
+                                                                                                                             FALSE 
+                                                                                                                      Customer_Age 
+                                                                                                                              TRUE 
+                                                                                                                            Gender 
+                                                                                                                             FALSE 
+                                                                                                                   Dependent_count 
+                                                                                                                              TRUE 
+                                                                                                                   Education_Level 
+                                                                                                                             FALSE 
+                                                                                                                    Marital_Status 
+                                                                                                                             FALSE 
+                                                                                                                   Income_Category 
+                                                                                                                             FALSE 
+                                                                                                                     Card_Category 
+                                                                                                                             FALSE 
+                                                                                                                    Months_on_book 
+                                                                                                                              TRUE 
+                                                                                                          Total_Relationship_Count 
+                                                                                                                              TRUE 
+                                                                                                            Months_Inactive_12_mon 
+                                                                                                                              TRUE 
+                                                                                                             Contacts_Count_12_mon 
+                                                                                                                              TRUE 
+                                                                                                                      Credit_Limit 
+                                                                                                                              TRUE 
+                                                                                                               Total_Revolving_Bal 
+                                                                                                                              TRUE 
+                                                                                                                   Avg_Open_To_Buy 
+                                                                                                                              TRUE 
+                                                                                                              Total_Amt_Chng_Q4_Q1 
+                                                                                                                              TRUE 
+                                                                                                                   Total_Trans_Amt 
+                                                                                                                              TRUE 
+                                                                                                                    Total_Trans_Ct 
+                                                                                                                              TRUE 
+                                                                                                               Total_Ct_Chng_Q4_Q1 
+                                                                                                                              TRUE 
+                                                                                                             Avg_Utilization_Ratio 
+                                                                                                                              TRUE 
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1 
+                                                                                                                              TRUE 
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2 
+                                                                                                                              TRUE 
+>   cor.BC <- cor(BankChurners[, Num.cols])
+>   cor.BC
+                                                                                                                                       CLIENTNUM
+CLIENTNUM                                                                                                                           1.0000000000
+Customer_Age                                                                                                                        0.0076126512
+Dependent_count                                                                                                                     0.0067717372
+Months_on_book                                                                                                                      0.1345878309
+Total_Relationship_Count                                                                                                            0.0069069051
+Months_Inactive_12_mon                                                                                                              0.0057285276
+Contacts_Count_12_mon                                                                                                               0.0056944278
+Credit_Limit                                                                                                                        0.0057076227
+Total_Revolving_Bal                                                                                                                 0.0008245041
+Avg_Open_To_Buy                                                                                                                     0.0056325068
+Total_Amt_Chng_Q4_Q1                                                                                                                0.0173693399
+Total_Trans_Amt                                                                                                                    -0.0196917088
+Total_Trans_Ct                                                                                                                     -0.0029610131
+Total_Ct_Chng_Q4_Q1                                                                                                                 0.0076955755
+Avg_Utilization_Ratio                                                                                                               0.0002659600
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1 -0.0464105098
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2  0.0464104749
+                                                                                                                                   Customer_Age
+CLIENTNUM                                                                                                                           0.007612651
+Customer_Age                                                                                                                        1.000000000
+Dependent_count                                                                                                                    -0.122253752
+Months_on_book                                                                                                                      0.788912359
+Total_Relationship_Count                                                                                                           -0.010931069
+Months_Inactive_12_mon                                                                                                              0.054360999
+Contacts_Count_12_mon                                                                                                              -0.018451855
+Credit_Limit                                                                                                                        0.002476227
+Total_Revolving_Bal                                                                                                                 0.014779895
+Avg_Open_To_Buy                                                                                                                     0.001150678
+Total_Amt_Chng_Q4_Q1                                                                                                               -0.062042092
+Total_Trans_Amt                                                                                                                    -0.046446491
+Total_Trans_Ct                                                                                                                     -0.067096864
+Total_Ct_Chng_Q4_Q1                                                                                                                -0.012142548
+Avg_Utilization_Ratio                                                                                                               0.007114222
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1  0.018188652
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2 -0.018188610
+                                                                                                                                   Dependent_count
+CLIENTNUM                                                                                                                              0.006771737
+Customer_Age                                                                                                                          -0.122253752
+Dependent_count                                                                                                                        1.000000000
+Months_on_book                                                                                                                        -0.103062281
+Total_Relationship_Count                                                                                                              -0.039076389
+Months_Inactive_12_mon                                                                                                                -0.010767918
+Contacts_Count_12_mon                                                                                                                 -0.040504960
+Credit_Limit                                                                                                                           0.068064600
+Total_Revolving_Bal                                                                                                                   -0.002688146
+Avg_Open_To_Buy                                                                                                                        0.068291304
+Total_Amt_Chng_Q4_Q1                                                                                                                  -0.035439429
+Total_Trans_Amt                                                                                                                        0.025046238
+Total_Trans_Ct                                                                                                                         0.049912477
+Total_Ct_Chng_Q4_Q1                                                                                                                    0.011087181
+Avg_Utilization_Ratio                                                                                                                 -0.037135159
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1     0.019189017
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2    -0.019189355
+                                                                                                                                   Months_on_book
+CLIENTNUM                                                                                                                             0.134587831
+Customer_Age                                                                                                                          0.788912359
+Dependent_count                                                                                                                      -0.103062281
+Months_on_book                                                                                                                        1.000000000
+Total_Relationship_Count                                                                                                             -0.009203080
+Months_Inactive_12_mon                                                                                                                0.074163514
+Contacts_Count_12_mon                                                                                                                -0.010774479
+Credit_Limit                                                                                                                          0.007507009
+Total_Revolving_Bal                                                                                                                   0.008622804
+Avg_Open_To_Buy                                                                                                                       0.006732392
+Total_Amt_Chng_Q4_Q1                                                                                                                 -0.048959320
+Total_Trans_Amt                                                                                                                      -0.038590629
+Total_Trans_Ct                                                                                                                       -0.049819084
+Total_Ct_Chng_Q4_Q1                                                                                                                  -0.014071671
+Avg_Utilization_Ratio                                                                                                                -0.007540837
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1    0.013693498
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2   -0.013693505
+                                                                                                                                   Total_Relationship_Count
+CLIENTNUM                                                                                                                                       0.006906905
+Customer_Age                                                                                                                                   -0.010931069
+Dependent_count                                                                                                                                -0.039076389
+Months_on_book                                                                                                                                 -0.009203080
+Total_Relationship_Count                                                                                                                        1.000000000
+Months_Inactive_12_mon                                                                                                                         -0.003675377
+Contacts_Count_12_mon                                                                                                                           0.055203163
+Credit_Limit                                                                                                                                   -0.071385817
+Total_Revolving_Bal                                                                                                                             0.013725849
+Avg_Open_To_Buy                                                                                                                                -0.072601363
+Total_Amt_Chng_Q4_Q1                                                                                                                            0.050118644
+Total_Trans_Amt                                                                                                                                -0.347228880
+Total_Trans_Ct                                                                                                                                 -0.241890850
+Total_Ct_Chng_Q4_Q1                                                                                                                             0.040831148
+Avg_Utilization_Ratio                                                                                                                           0.067662878
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1             -0.149980622
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2              0.149980621
+                                                                                                                                   Months_Inactive_12_mon
+CLIENTNUM                                                                                                                                     0.005728528
+Customer_Age                                                                                                                                  0.054360999
+Dependent_count                                                                                                                              -0.010767918
+Months_on_book                                                                                                                                0.074163514
+Total_Relationship_Count                                                                                                                     -0.003675377
+Months_Inactive_12_mon                                                                                                                        1.000000000
+Contacts_Count_12_mon                                                                                                                         0.029492910
+Credit_Limit                                                                                                                                 -0.020393791
+Total_Revolving_Bal                                                                                                                          -0.042209609
+Avg_Open_To_Buy                                                                                                                              -0.016605384
+Total_Amt_Chng_Q4_Q1                                                                                                                         -0.032246712
+Total_Trans_Amt                                                                                                                              -0.036982425
+Total_Trans_Ct                                                                                                                               -0.042787039
+Total_Ct_Chng_Q4_Q1                                                                                                                          -0.038989338
+Avg_Utilization_Ratio                                                                                                                        -0.007502633
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1            0.153452118
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2           -0.153451919
+                                                                                                                                   Contacts_Count_12_mon
+CLIENTNUM                                                                                                                                    0.005694428
+Customer_Age                                                                                                                                -0.018451855
+Dependent_count                                                                                                                             -0.040504960
+Months_on_book                                                                                                                              -0.010774479
+Total_Relationship_Count                                                                                                                     0.055203163
+Months_Inactive_12_mon                                                                                                                       0.029492910
+Contacts_Count_12_mon                                                                                                                        1.000000000
+Credit_Limit                                                                                                                                 0.020817012
+Total_Revolving_Bal                                                                                                                         -0.053912731
+Avg_Open_To_Buy                                                                                                                              0.025645961
+Total_Amt_Chng_Q4_Q1                                                                                                                        -0.024445115
+Total_Trans_Amt                                                                                                                             -0.112773929
+Total_Trans_Ct                                                                                                                              -0.152212605
+Total_Ct_Chng_Q4_Q1                                                                                                                         -0.094996916
+Avg_Utilization_Ratio                                                                                                                       -0.055471285
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1           0.205772074
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2          -0.205772484
+                                                                                                                                   Credit_Limit
+CLIENTNUM                                                                                                                           0.005707623
+Customer_Age                                                                                                                        0.002476227
+Dependent_count                                                                                                                     0.068064600
+Months_on_book                                                                                                                      0.007507009
+Total_Relationship_Count                                                                                                           -0.071385817
+Months_Inactive_12_mon                                                                                                             -0.020393791
+Contacts_Count_12_mon                                                                                                               0.020817012
+Credit_Limit                                                                                                                        1.000000000
+Total_Revolving_Bal                                                                                                                 0.042492607
+Avg_Open_To_Buy                                                                                                                     0.995980544
+Total_Amt_Chng_Q4_Q1                                                                                                                0.012812536
+Total_Trans_Amt                                                                                                                     0.171730150
+Total_Trans_Ct                                                                                                                      0.075926912
+Total_Ct_Chng_Q4_Q1                                                                                                                -0.002019850
+Avg_Utilization_Ratio                                                                                                              -0.482965071
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1 -0.023853413
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2  0.023853482
+                                                                                                                                   Total_Revolving_Bal
+CLIENTNUM                                                                                                                                 0.0008245041
+Customer_Age                                                                                                                              0.0147798946
+Dependent_count                                                                                                                          -0.0026881459
+Months_on_book                                                                                                                            0.0086228045
+Total_Relationship_Count                                                                                                                  0.0137258489
+Months_Inactive_12_mon                                                                                                                   -0.0422096088
+Contacts_Count_12_mon                                                                                                                    -0.0539127312
+Credit_Limit                                                                                                                              0.0424926073
+Total_Revolving_Bal                                                                                                                       1.0000000000
+Avg_Open_To_Buy                                                                                                                          -0.0471671279
+Total_Amt_Chng_Q4_Q1                                                                                                                      0.0581736645
+Total_Trans_Amt                                                                                                                           0.0643704770
+Total_Trans_Ct                                                                                                                            0.0560604930
+Total_Ct_Chng_Q4_Q1                                                                                                                       0.0898610078
+Avg_Utilization_Ratio                                                                                                                     0.6240219910
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1       -0.2630325068
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2        0.2630324750
+                                                                                                                                   Avg_Open_To_Buy
+CLIENTNUM                                                                                                                             0.0056325068
+Customer_Age                                                                                                                          0.0011506779
+Dependent_count                                                                                                                       0.0682913039
+Months_on_book                                                                                                                        0.0067323916
+Total_Relationship_Count                                                                                                             -0.0726013628
+Months_Inactive_12_mon                                                                                                               -0.0166053838
+Contacts_Count_12_mon                                                                                                                 0.0256459612
+Credit_Limit                                                                                                                          0.9959805439
+Total_Revolving_Bal                                                                                                                  -0.0471671279
+Avg_Open_To_Buy                                                                                                                       1.0000000000
+Total_Amt_Chng_Q4_Q1                                                                                                                  0.0075945292
+Total_Trans_Amt                                                                                                                       0.1659232285
+Total_Trans_Ct                                                                                                                        0.0708851016
+Total_Ct_Chng_Q4_Q1                                                                                                                  -0.0100755384
+Avg_Utilization_Ratio                                                                                                                -0.5388077476
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1   -0.0002673269
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2    0.0002673980
+                                                                                                                                   Total_Amt_Chng_Q4_Q1
+CLIENTNUM                                                                                                                                   0.017369340
+Customer_Age                                                                                                                               -0.062042092
+Dependent_count                                                                                                                            -0.035439429
+Months_on_book                                                                                                                             -0.048959320
+Total_Relationship_Count                                                                                                                    0.050118644
+Months_Inactive_12_mon                                                                                                                     -0.032246712
+Contacts_Count_12_mon                                                                                                                      -0.024445115
+Credit_Limit                                                                                                                                0.012812536
+Total_Revolving_Bal                                                                                                                         0.058173664
+Avg_Open_To_Buy                                                                                                                             0.007594529
+Total_Amt_Chng_Q4_Q1                                                                                                                        1.000000000
+Total_Trans_Amt                                                                                                                             0.039677592
+Total_Trans_Ct                                                                                                                              0.005468567
+Total_Ct_Chng_Q4_Q1                                                                                                                         0.384189256
+Avg_Utilization_Ratio                                                                                                                       0.035234835
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1         -0.131207399
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2          0.131207433
+                                                                                                                                   Total_Trans_Amt
+CLIENTNUM                                                                                                                              -0.01969171
+Customer_Age                                                                                                                           -0.04644649
+Dependent_count                                                                                                                         0.02504624
+Months_on_book                                                                                                                         -0.03859063
+Total_Relationship_Count                                                                                                               -0.34722888
+Months_Inactive_12_mon                                                                                                                 -0.03698243
+Contacts_Count_12_mon                                                                                                                  -0.11277393
+Credit_Limit                                                                                                                            0.17173015
+Total_Revolving_Bal                                                                                                                     0.06437048
+Avg_Open_To_Buy                                                                                                                         0.16592323
+Total_Amt_Chng_Q4_Q1                                                                                                                    0.03967759
+Total_Trans_Amt                                                                                                                         1.00000000
+Total_Trans_Ct                                                                                                                          0.80719203
+Total_Ct_Chng_Q4_Q1                                                                                                                     0.08558098
+Avg_Utilization_Ratio                                                                                                                  -0.08303425
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1     -0.16864202
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2      0.16864217
+                                                                                                                                   Total_Trans_Ct
+CLIENTNUM                                                                                                                            -0.002961013
+Customer_Age                                                                                                                         -0.067096864
+Dependent_count                                                                                                                       0.049912477
+Months_on_book                                                                                                                       -0.049819084
+Total_Relationship_Count                                                                                                             -0.241890850
+Months_Inactive_12_mon                                                                                                               -0.042787039
+Contacts_Count_12_mon                                                                                                                -0.152212605
+Credit_Limit                                                                                                                          0.075926912
+Total_Revolving_Bal                                                                                                                   0.056060493
+Avg_Open_To_Buy                                                                                                                       0.070885102
+Total_Amt_Chng_Q4_Q1                                                                                                                  0.005468567
+Total_Trans_Amt                                                                                                                       0.807192035
+Total_Trans_Ct                                                                                                                        1.000000000
+Total_Ct_Chng_Q4_Q1                                                                                                                   0.112324440
+Avg_Utilization_Ratio                                                                                                                 0.002838112
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1   -0.371403353
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2    0.371403431
+                                                                                                                                   Total_Ct_Chng_Q4_Q1
+CLIENTNUM                                                                                                                                  0.007695575
+Customer_Age                                                                                                                              -0.012142548
+Dependent_count                                                                                                                            0.011087181
+Months_on_book                                                                                                                            -0.014071671
+Total_Relationship_Count                                                                                                                   0.040831148
+Months_Inactive_12_mon                                                                                                                    -0.038989338
+Contacts_Count_12_mon                                                                                                                     -0.094996916
+Credit_Limit                                                                                                                              -0.002019850
+Total_Revolving_Bal                                                                                                                        0.089861008
+Avg_Open_To_Buy                                                                                                                           -0.010075538
+Total_Amt_Chng_Q4_Q1                                                                                                                       0.384189256
+Total_Trans_Amt                                                                                                                            0.085580976
+Total_Trans_Ct                                                                                                                             0.112324440
+Total_Ct_Chng_Q4_Q1                                                                                                                        1.000000000
+Avg_Utilization_Ratio                                                                                                                      0.074143210
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1        -0.290114955
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2         0.290115136
+                                                                                                                                   Avg_Utilization_Ratio
+CLIENTNUM                                                                                                                                    0.000265960
+Customer_Age                                                                                                                                 0.007114222
+Dependent_count                                                                                                                             -0.037135159
+Months_on_book                                                                                                                              -0.007540837
+Total_Relationship_Count                                                                                                                     0.067662878
+Months_Inactive_12_mon                                                                                                                      -0.007502633
+Contacts_Count_12_mon                                                                                                                       -0.055471285
+Credit_Limit                                                                                                                                -0.482965071
+Total_Revolving_Bal                                                                                                                          0.624021991
+Avg_Open_To_Buy                                                                                                                             -0.538807748
+Total_Amt_Chng_Q4_Q1                                                                                                                         0.035234835
+Total_Trans_Amt                                                                                                                             -0.083034246
+Total_Trans_Ct                                                                                                                               0.002838112
+Total_Ct_Chng_Q4_Q1                                                                                                                          0.074143210
+Avg_Utilization_Ratio                                                                                                                        1.000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1          -0.178404795
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2           0.178404713
+                                                                                                                                   Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1
+CLIENTNUM                                                                                                                                                                                                                                               -0.0464105098
+Customer_Age                                                                                                                                                                                                                                             0.0181886525
+Dependent_count                                                                                                                                                                                                                                          0.0191890165
+Months_on_book                                                                                                                                                                                                                                           0.0136934978
+Total_Relationship_Count                                                                                                                                                                                                                                -0.1499806221
+Months_Inactive_12_mon                                                                                                                                                                                                                                   0.1534521178
+Contacts_Count_12_mon                                                                                                                                                                                                                                    0.2057720744
+Credit_Limit                                                                                                                                                                                                                                            -0.0238534134
+Total_Revolving_Bal                                                                                                                                                                                                                                     -0.2630325068
+Avg_Open_To_Buy                                                                                                                                                                                                                                         -0.0002673269
+Total_Amt_Chng_Q4_Q1                                                                                                                                                                                                                                    -0.1312073989
+Total_Trans_Amt                                                                                                                                                                                                                                         -0.1686420203
+Total_Trans_Ct                                                                                                                                                                                                                                          -0.3714033526
+Total_Ct_Chng_Q4_Q1                                                                                                                                                                                                                                     -0.2901149551
+Avg_Utilization_Ratio                                                                                                                                                                                                                                   -0.1784047945
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1                                                                                                                       1.0000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2                                                                                                                      -1.0000000000
+                                                                                                                                   Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2
+CLIENTNUM                                                                                                                                                                                                                                                 0.046410475
+Customer_Age                                                                                                                                                                                                                                             -0.018188610
+Dependent_count                                                                                                                                                                                                                                          -0.019189355
+Months_on_book                                                                                                                                                                                                                                           -0.013693505
+Total_Relationship_Count                                                                                                                                                                                                                                  0.149980621
+Months_Inactive_12_mon                                                                                                                                                                                                                                   -0.153451919
+Contacts_Count_12_mon                                                                                                                                                                                                                                    -0.205772484
+Credit_Limit                                                                                                                                                                                                                                              0.023853482
+Total_Revolving_Bal                                                                                                                                                                                                                                       0.263032475
+Avg_Open_To_Buy                                                                                                                                                                                                                                           0.000267398
+Total_Amt_Chng_Q4_Q1                                                                                                                                                                                                                                      0.131207433
+Total_Trans_Amt                                                                                                                                                                                                                                           0.168642171
+Total_Trans_Ct                                                                                                                                                                                                                                            0.371403431
+Total_Ct_Chng_Q4_Q1                                                                                                                                                                                                                                       0.290115136
+Avg_Utilization_Ratio                                                                                                                                                                                                                                     0.178404713
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1                                                                                                                       -1.000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2                                                                                                                        1.000000000
+>   corrplot(cor.BC, method = "color")
+Warning message:
+In corrplot(cor.BC, method = "color") :
+  Not been able to calculate text margin, please try again with a clean new empty window using {plot.new(); dev.off()} or reduce tl.cex
+>   corrplot(cor.BC, method = "color",tl.cex = 0.2)
+>   #Korelasi
+>   cor(BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2,BankChurners$Total_Trans_Ct)
+[1] 0.3714034
+>   cor.test(BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2,BankChurners$Total_Trans_Ct,
++            conf.level = 0.95)
+
+	Pearson's product-moment correlation
+
+data:  BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2 and BankChurners$Total_Trans_Ct
+t = 40.251, df = 10125, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.354491 0.388073
+sample estimates:
+      cor 
+0.3714034 
+
+>   #HeatMap
+>   BC <- BankChurners[order(BankChurners$Months_on_book),]
+>   row.names(BC) <- BankChurners$Card_Category
+Error in `.rowNamesDF<-`(x, value = value) : 
+  duplicate 'row.names' are not allowed
+In addition: Warning messages:
+1: Setting row names on a tibble is deprecated. 
+2: non-unique values when setting 'row.names': ‘Blue’, ‘Gold’, ‘Platinum’, ‘Silver’ 
+>   BC <- BankChurners[(2:20)]
+>   BC_matrix <- data.matrix(BC)
+>   BC_heatmap <- heatmap(BC_matrix, Rowv=NA, Colv=NA, col = heat.colors(256), scale="column", margins=c(5,10))
+> 
+> 
+> 
+> 
+> library(readr)
+> BankChurners <- read_csv("BankChurners.csv")
+
+── Column specification ────────────────────────────────────
+cols(
+  .default = col_double(),
+  Attrition_Flag = col_character(),
+  Gender = col_character(),
+  Education_Level = col_character(),
+  Marital_Status = col_character(),
+  Income_Category = col_character(),
+  Card_Category = col_character()
+)
+ℹ Use `spec()` for the full column specifications.
+
+> View(BankChurners)
+> # Mengetahui banyaknya NA/NAN pada dataset
+> sum(is.na(BankChurners))
+[1] 0
+> #Install Visualisasi Data
+> library(dplyr)
+> library(ggplot2) # visualisasi data untuk bahasa pemrograman statistik R
+> library(GGally)
+> library(tidyverse)
+> library(treemap)
+> library(purrr)
+> library(corrplot)
+> table(BankChurners$Education_Level)
+
+      College     Doctorate      Graduate   High School 
+         1013           451          3128          2013 
+Post-Graduate    Uneducated       Unknown 
+          516          1487          1519 
+> table(BankChurners$Gender)
+
+   F    M 
+5358 4769 
+> # Membuat scatter plot dengan 3 fitur pada Bankchurners
+> ggplot(BankChurners, aes(x = Credit_Limit, y = Education_Level, color = Attrition_Flag)) +
++   geom_point(alpha = .9)
+> # Menampilkan Variabel Marital status
+> BankChurners %>%
++   select( Marital_Status,contains("SF")) %>%
++   ggpairs()
+> #Histogram 
+> hist(BankChurners$Avg_Utilization_Ratio)
+> ggplot(BankChurners, aes(x = Credit_Limit, y = Avg_Open_To_Buy )) +
++   geom_point(alpha = .3)
+>   #menggunakan metode Bar chart
+>   ggplot(data=BankChurners)+
++     geom_bar(mapping = aes(BankChurners$Income_Category,
++                            fill = as.factor(BankChurners$Attrition_Flag)),
++              position = 'dodge')
+>   #menetukan korelasi antar data numeris
+>   Num.cols <- sapply(BankChurners , is.numeric)
+>   Num.cols
+                                                                                                                         CLIENTNUM 
+                                                                                                                              TRUE 
+                                                                                                                    Attrition_Flag 
+                                                                                                                             FALSE 
+                                                                                                                      Customer_Age 
+                                                                                                                              TRUE 
+                                                                                                                            Gender 
+                                                                                                                             FALSE 
+                                                                                                                   Dependent_count 
+                                                                                                                              TRUE 
+                                                                                                                   Education_Level 
+                                                                                                                             FALSE 
+                                                                                                                    Marital_Status 
+                                                                                                                             FALSE 
+                                                                                                                   Income_Category 
+                                                                                                                             FALSE 
+                                                                                                                     Card_Category 
+                                                                                                                             FALSE 
+                                                                                                                    Months_on_book 
+                                                                                                                              TRUE 
+                                                                                                          Total_Relationship_Count 
+                                                                                                                              TRUE 
+                                                                                                            Months_Inactive_12_mon 
+                                                                                                                              TRUE 
+                                                                                                             Contacts_Count_12_mon 
+                                                                                                                              TRUE 
+                                                                                                                      Credit_Limit 
+                                                                                                                              TRUE 
+                                                                                                               Total_Revolving_Bal 
+                                                                                                                              TRUE 
+                                                                                                                   Avg_Open_To_Buy 
+                                                                                                                              TRUE 
+                                                                                                              Total_Amt_Chng_Q4_Q1 
+                                                                                                                              TRUE 
+                                                                                                                   Total_Trans_Amt 
+                                                                                                                              TRUE 
+                                                                                                                    Total_Trans_Ct 
+                                                                                                                              TRUE 
+                                                                                                               Total_Ct_Chng_Q4_Q1 
+                                                                                                                              TRUE 
+                                                                                                             Avg_Utilization_Ratio 
+                                                                                                                              TRUE 
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1 
+                                                                                                                              TRUE 
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2 
+                                                                                                                              TRUE 
+>   cor.BC <- cor(BankChurners[, Num.cols])
+>   cor.BC
+                                                                                                                                       CLIENTNUM
+CLIENTNUM                                                                                                                           1.0000000000
+Customer_Age                                                                                                                        0.0076126512
+Dependent_count                                                                                                                     0.0067717372
+Months_on_book                                                                                                                      0.1345878309
+Total_Relationship_Count                                                                                                            0.0069069051
+Months_Inactive_12_mon                                                                                                              0.0057285276
+Contacts_Count_12_mon                                                                                                               0.0056944278
+Credit_Limit                                                                                                                        0.0057076227
+Total_Revolving_Bal                                                                                                                 0.0008245041
+Avg_Open_To_Buy                                                                                                                     0.0056325068
+Total_Amt_Chng_Q4_Q1                                                                                                                0.0173693399
+Total_Trans_Amt                                                                                                                    -0.0196917088
+Total_Trans_Ct                                                                                                                     -0.0029610131
+Total_Ct_Chng_Q4_Q1                                                                                                                 0.0076955755
+Avg_Utilization_Ratio                                                                                                               0.0002659600
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1 -0.0464105098
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2  0.0464104749
+                                                                                                                                   Customer_Age
+CLIENTNUM                                                                                                                           0.007612651
+Customer_Age                                                                                                                        1.000000000
+Dependent_count                                                                                                                    -0.122253752
+Months_on_book                                                                                                                      0.788912359
+Total_Relationship_Count                                                                                                           -0.010931069
+Months_Inactive_12_mon                                                                                                              0.054360999
+Contacts_Count_12_mon                                                                                                              -0.018451855
+Credit_Limit                                                                                                                        0.002476227
+Total_Revolving_Bal                                                                                                                 0.014779895
+Avg_Open_To_Buy                                                                                                                     0.001150678
+Total_Amt_Chng_Q4_Q1                                                                                                               -0.062042092
+Total_Trans_Amt                                                                                                                    -0.046446491
+Total_Trans_Ct                                                                                                                     -0.067096864
+Total_Ct_Chng_Q4_Q1                                                                                                                -0.012142548
+Avg_Utilization_Ratio                                                                                                               0.007114222
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1  0.018188652
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2 -0.018188610
+                                                                                                                                   Dependent_count
+CLIENTNUM                                                                                                                              0.006771737
+Customer_Age                                                                                                                          -0.122253752
+Dependent_count                                                                                                                        1.000000000
+Months_on_book                                                                                                                        -0.103062281
+Total_Relationship_Count                                                                                                              -0.039076389
+Months_Inactive_12_mon                                                                                                                -0.010767918
+Contacts_Count_12_mon                                                                                                                 -0.040504960
+Credit_Limit                                                                                                                           0.068064600
+Total_Revolving_Bal                                                                                                                   -0.002688146
+Avg_Open_To_Buy                                                                                                                        0.068291304
+Total_Amt_Chng_Q4_Q1                                                                                                                  -0.035439429
+Total_Trans_Amt                                                                                                                        0.025046238
+Total_Trans_Ct                                                                                                                         0.049912477
+Total_Ct_Chng_Q4_Q1                                                                                                                    0.011087181
+Avg_Utilization_Ratio                                                                                                                 -0.037135159
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1     0.019189017
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2    -0.019189355
+                                                                                                                                   Months_on_book
+CLIENTNUM                                                                                                                             0.134587831
+Customer_Age                                                                                                                          0.788912359
+Dependent_count                                                                                                                      -0.103062281
+Months_on_book                                                                                                                        1.000000000
+Total_Relationship_Count                                                                                                             -0.009203080
+Months_Inactive_12_mon                                                                                                                0.074163514
+Contacts_Count_12_mon                                                                                                                -0.010774479
+Credit_Limit                                                                                                                          0.007507009
+Total_Revolving_Bal                                                                                                                   0.008622804
+Avg_Open_To_Buy                                                                                                                       0.006732392
+Total_Amt_Chng_Q4_Q1                                                                                                                 -0.048959320
+Total_Trans_Amt                                                                                                                      -0.038590629
+Total_Trans_Ct                                                                                                                       -0.049819084
+Total_Ct_Chng_Q4_Q1                                                                                                                  -0.014071671
+Avg_Utilization_Ratio                                                                                                                -0.007540837
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1    0.013693498
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2   -0.013693505
+                                                                                                                                   Total_Relationship_Count
+CLIENTNUM                                                                                                                                       0.006906905
+Customer_Age                                                                                                                                   -0.010931069
+Dependent_count                                                                                                                                -0.039076389
+Months_on_book                                                                                                                                 -0.009203080
+Total_Relationship_Count                                                                                                                        1.000000000
+Months_Inactive_12_mon                                                                                                                         -0.003675377
+Contacts_Count_12_mon                                                                                                                           0.055203163
+Credit_Limit                                                                                                                                   -0.071385817
+Total_Revolving_Bal                                                                                                                             0.013725849
+Avg_Open_To_Buy                                                                                                                                -0.072601363
+Total_Amt_Chng_Q4_Q1                                                                                                                            0.050118644
+Total_Trans_Amt                                                                                                                                -0.347228880
+Total_Trans_Ct                                                                                                                                 -0.241890850
+Total_Ct_Chng_Q4_Q1                                                                                                                             0.040831148
+Avg_Utilization_Ratio                                                                                                                           0.067662878
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1             -0.149980622
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2              0.149980621
+                                                                                                                                   Months_Inactive_12_mon
+CLIENTNUM                                                                                                                                     0.005728528
+Customer_Age                                                                                                                                  0.054360999
+Dependent_count                                                                                                                              -0.010767918
+Months_on_book                                                                                                                                0.074163514
+Total_Relationship_Count                                                                                                                     -0.003675377
+Months_Inactive_12_mon                                                                                                                        1.000000000
+Contacts_Count_12_mon                                                                                                                         0.029492910
+Credit_Limit                                                                                                                                 -0.020393791
+Total_Revolving_Bal                                                                                                                          -0.042209609
+Avg_Open_To_Buy                                                                                                                              -0.016605384
+Total_Amt_Chng_Q4_Q1                                                                                                                         -0.032246712
+Total_Trans_Amt                                                                                                                              -0.036982425
+Total_Trans_Ct                                                                                                                               -0.042787039
+Total_Ct_Chng_Q4_Q1                                                                                                                          -0.038989338
+Avg_Utilization_Ratio                                                                                                                        -0.007502633
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1            0.153452118
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2           -0.153451919
+                                                                                                                                   Contacts_Count_12_mon
+CLIENTNUM                                                                                                                                    0.005694428
+Customer_Age                                                                                                                                -0.018451855
+Dependent_count                                                                                                                             -0.040504960
+Months_on_book                                                                                                                              -0.010774479
+Total_Relationship_Count                                                                                                                     0.055203163
+Months_Inactive_12_mon                                                                                                                       0.029492910
+Contacts_Count_12_mon                                                                                                                        1.000000000
+Credit_Limit                                                                                                                                 0.020817012
+Total_Revolving_Bal                                                                                                                         -0.053912731
+Avg_Open_To_Buy                                                                                                                              0.025645961
+Total_Amt_Chng_Q4_Q1                                                                                                                        -0.024445115
+Total_Trans_Amt                                                                                                                             -0.112773929
+Total_Trans_Ct                                                                                                                              -0.152212605
+Total_Ct_Chng_Q4_Q1                                                                                                                         -0.094996916
+Avg_Utilization_Ratio                                                                                                                       -0.055471285
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1           0.205772074
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2          -0.205772484
+                                                                                                                                   Credit_Limit
+CLIENTNUM                                                                                                                           0.005707623
+Customer_Age                                                                                                                        0.002476227
+Dependent_count                                                                                                                     0.068064600
+Months_on_book                                                                                                                      0.007507009
+Total_Relationship_Count                                                                                                           -0.071385817
+Months_Inactive_12_mon                                                                                                             -0.020393791
+Contacts_Count_12_mon                                                                                                               0.020817012
+Credit_Limit                                                                                                                        1.000000000
+Total_Revolving_Bal                                                                                                                 0.042492607
+Avg_Open_To_Buy                                                                                                                     0.995980544
+Total_Amt_Chng_Q4_Q1                                                                                                                0.012812536
+Total_Trans_Amt                                                                                                                     0.171730150
+Total_Trans_Ct                                                                                                                      0.075926912
+Total_Ct_Chng_Q4_Q1                                                                                                                -0.002019850
+Avg_Utilization_Ratio                                                                                                              -0.482965071
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1 -0.023853413
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2  0.023853482
+                                                                                                                                   Total_Revolving_Bal
+CLIENTNUM                                                                                                                                 0.0008245041
+Customer_Age                                                                                                                              0.0147798946
+Dependent_count                                                                                                                          -0.0026881459
+Months_on_book                                                                                                                            0.0086228045
+Total_Relationship_Count                                                                                                                  0.0137258489
+Months_Inactive_12_mon                                                                                                                   -0.0422096088
+Contacts_Count_12_mon                                                                                                                    -0.0539127312
+Credit_Limit                                                                                                                              0.0424926073
+Total_Revolving_Bal                                                                                                                       1.0000000000
+Avg_Open_To_Buy                                                                                                                          -0.0471671279
+Total_Amt_Chng_Q4_Q1                                                                                                                      0.0581736645
+Total_Trans_Amt                                                                                                                           0.0643704770
+Total_Trans_Ct                                                                                                                            0.0560604930
+Total_Ct_Chng_Q4_Q1                                                                                                                       0.0898610078
+Avg_Utilization_Ratio                                                                                                                     0.6240219910
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1       -0.2630325068
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2        0.2630324750
+                                                                                                                                   Avg_Open_To_Buy
+CLIENTNUM                                                                                                                             0.0056325068
+Customer_Age                                                                                                                          0.0011506779
+Dependent_count                                                                                                                       0.0682913039
+Months_on_book                                                                                                                        0.0067323916
+Total_Relationship_Count                                                                                                             -0.0726013628
+Months_Inactive_12_mon                                                                                                               -0.0166053838
+Contacts_Count_12_mon                                                                                                                 0.0256459612
+Credit_Limit                                                                                                                          0.9959805439
+Total_Revolving_Bal                                                                                                                  -0.0471671279
+Avg_Open_To_Buy                                                                                                                       1.0000000000
+Total_Amt_Chng_Q4_Q1                                                                                                                  0.0075945292
+Total_Trans_Amt                                                                                                                       0.1659232285
+Total_Trans_Ct                                                                                                                        0.0708851016
+Total_Ct_Chng_Q4_Q1                                                                                                                  -0.0100755384
+Avg_Utilization_Ratio                                                                                                                -0.5388077476
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1   -0.0002673269
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2    0.0002673980
+                                                                                                                                   Total_Amt_Chng_Q4_Q1
+CLIENTNUM                                                                                                                                   0.017369340
+Customer_Age                                                                                                                               -0.062042092
+Dependent_count                                                                                                                            -0.035439429
+Months_on_book                                                                                                                             -0.048959320
+Total_Relationship_Count                                                                                                                    0.050118644
+Months_Inactive_12_mon                                                                                                                     -0.032246712
+Contacts_Count_12_mon                                                                                                                      -0.024445115
+Credit_Limit                                                                                                                                0.012812536
+Total_Revolving_Bal                                                                                                                         0.058173664
+Avg_Open_To_Buy                                                                                                                             0.007594529
+Total_Amt_Chng_Q4_Q1                                                                                                                        1.000000000
+Total_Trans_Amt                                                                                                                             0.039677592
+Total_Trans_Ct                                                                                                                              0.005468567
+Total_Ct_Chng_Q4_Q1                                                                                                                         0.384189256
+Avg_Utilization_Ratio                                                                                                                       0.035234835
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1         -0.131207399
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2          0.131207433
+                                                                                                                                   Total_Trans_Amt
+CLIENTNUM                                                                                                                              -0.01969171
+Customer_Age                                                                                                                           -0.04644649
+Dependent_count                                                                                                                         0.02504624
+Months_on_book                                                                                                                         -0.03859063
+Total_Relationship_Count                                                                                                               -0.34722888
+Months_Inactive_12_mon                                                                                                                 -0.03698243
+Contacts_Count_12_mon                                                                                                                  -0.11277393
+Credit_Limit                                                                                                                            0.17173015
+Total_Revolving_Bal                                                                                                                     0.06437048
+Avg_Open_To_Buy                                                                                                                         0.16592323
+Total_Amt_Chng_Q4_Q1                                                                                                                    0.03967759
+Total_Trans_Amt                                                                                                                         1.00000000
+Total_Trans_Ct                                                                                                                          0.80719203
+Total_Ct_Chng_Q4_Q1                                                                                                                     0.08558098
+Avg_Utilization_Ratio                                                                                                                  -0.08303425
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1     -0.16864202
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2      0.16864217
+                                                                                                                                   Total_Trans_Ct
+CLIENTNUM                                                                                                                            -0.002961013
+Customer_Age                                                                                                                         -0.067096864
+Dependent_count                                                                                                                       0.049912477
+Months_on_book                                                                                                                       -0.049819084
+Total_Relationship_Count                                                                                                             -0.241890850
+Months_Inactive_12_mon                                                                                                               -0.042787039
+Contacts_Count_12_mon                                                                                                                -0.152212605
+Credit_Limit                                                                                                                          0.075926912
+Total_Revolving_Bal                                                                                                                   0.056060493
+Avg_Open_To_Buy                                                                                                                       0.070885102
+Total_Amt_Chng_Q4_Q1                                                                                                                  0.005468567
+Total_Trans_Amt                                                                                                                       0.807192035
+Total_Trans_Ct                                                                                                                        1.000000000
+Total_Ct_Chng_Q4_Q1                                                                                                                   0.112324440
+Avg_Utilization_Ratio                                                                                                                 0.002838112
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1   -0.371403353
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2    0.371403431
+                                                                                                                                   Total_Ct_Chng_Q4_Q1
+CLIENTNUM                                                                                                                                  0.007695575
+Customer_Age                                                                                                                              -0.012142548
+Dependent_count                                                                                                                            0.011087181
+Months_on_book                                                                                                                            -0.014071671
+Total_Relationship_Count                                                                                                                   0.040831148
+Months_Inactive_12_mon                                                                                                                    -0.038989338
+Contacts_Count_12_mon                                                                                                                     -0.094996916
+Credit_Limit                                                                                                                              -0.002019850
+Total_Revolving_Bal                                                                                                                        0.089861008
+Avg_Open_To_Buy                                                                                                                           -0.010075538
+Total_Amt_Chng_Q4_Q1                                                                                                                       0.384189256
+Total_Trans_Amt                                                                                                                            0.085580976
+Total_Trans_Ct                                                                                                                             0.112324440
+Total_Ct_Chng_Q4_Q1                                                                                                                        1.000000000
+Avg_Utilization_Ratio                                                                                                                      0.074143210
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1        -0.290114955
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2         0.290115136
+                                                                                                                                   Avg_Utilization_Ratio
+CLIENTNUM                                                                                                                                    0.000265960
+Customer_Age                                                                                                                                 0.007114222
+Dependent_count                                                                                                                             -0.037135159
+Months_on_book                                                                                                                              -0.007540837
+Total_Relationship_Count                                                                                                                     0.067662878
+Months_Inactive_12_mon                                                                                                                      -0.007502633
+Contacts_Count_12_mon                                                                                                                       -0.055471285
+Credit_Limit                                                                                                                                -0.482965071
+Total_Revolving_Bal                                                                                                                          0.624021991
+Avg_Open_To_Buy                                                                                                                             -0.538807748
+Total_Amt_Chng_Q4_Q1                                                                                                                         0.035234835
+Total_Trans_Amt                                                                                                                             -0.083034246
+Total_Trans_Ct                                                                                                                               0.002838112
+Total_Ct_Chng_Q4_Q1                                                                                                                          0.074143210
+Avg_Utilization_Ratio                                                                                                                        1.000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1          -0.178404795
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2           0.178404713
+                                                                                                                                   Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1
+CLIENTNUM                                                                                                                                                                                                                                               -0.0464105098
+Customer_Age                                                                                                                                                                                                                                             0.0181886525
+Dependent_count                                                                                                                                                                                                                                          0.0191890165
+Months_on_book                                                                                                                                                                                                                                           0.0136934978
+Total_Relationship_Count                                                                                                                                                                                                                                -0.1499806221
+Months_Inactive_12_mon                                                                                                                                                                                                                                   0.1534521178
+Contacts_Count_12_mon                                                                                                                                                                                                                                    0.2057720744
+Credit_Limit                                                                                                                                                                                                                                            -0.0238534134
+Total_Revolving_Bal                                                                                                                                                                                                                                     -0.2630325068
+Avg_Open_To_Buy                                                                                                                                                                                                                                         -0.0002673269
+Total_Amt_Chng_Q4_Q1                                                                                                                                                                                                                                    -0.1312073989
+Total_Trans_Amt                                                                                                                                                                                                                                         -0.1686420203
+Total_Trans_Ct                                                                                                                                                                                                                                          -0.3714033526
+Total_Ct_Chng_Q4_Q1                                                                                                                                                                                                                                     -0.2901149551
+Avg_Utilization_Ratio                                                                                                                                                                                                                                   -0.1784047945
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1                                                                                                                       1.0000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2                                                                                                                      -1.0000000000
+                                                                                                                                   Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2
+CLIENTNUM                                                                                                                                                                                                                                                 0.046410475
+Customer_Age                                                                                                                                                                                                                                             -0.018188610
+Dependent_count                                                                                                                                                                                                                                          -0.019189355
+Months_on_book                                                                                                                                                                                                                                           -0.013693505
+Total_Relationship_Count                                                                                                                                                                                                                                  0.149980621
+Months_Inactive_12_mon                                                                                                                                                                                                                                   -0.153451919
+Contacts_Count_12_mon                                                                                                                                                                                                                                    -0.205772484
+Credit_Limit                                                                                                                                                                                                                                              0.023853482
+Total_Revolving_Bal                                                                                                                                                                                                                                       0.263032475
+Avg_Open_To_Buy                                                                                                                                                                                                                                           0.000267398
+Total_Amt_Chng_Q4_Q1                                                                                                                                                                                                                                      0.131207433
+Total_Trans_Amt                                                                                                                                                                                                                                           0.168642171
+Total_Trans_Ct                                                                                                                                                                                                                                            0.371403431
+Total_Ct_Chng_Q4_Q1                                                                                                                                                                                                                                       0.290115136
+Avg_Utilization_Ratio                                                                                                                                                                                                                                     0.178404713
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1                                                                                                                       -1.000000000
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2                                                                                                                        1.000000000
+>   corrplot(cor.BC, method = "color")
+Warning message:
+In corrplot(cor.BC, method = "color") :
+  Not been able to calculate text margin, please try again with a clean new empty window using {plot.new(); dev.off()} or reduce tl.cex
+>   corrplot(cor.BC, method = "color",tl.cex = 0.2)
+>   #Korelasi
+>   cor(BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2,BankChurners$Total_Trans_Ct)
+[1] 0.3714034
+>   cor.test(BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2,BankChurners$Total_Trans_Ct,
++            conf.level = 0.95)
+
+	Pearson's product-moment correlation
+
+data:  BankChurners$Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2 and BankChurners$Total_Trans_Ct
+t = 40.251, df = 10125, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.354491 0.388073
+sample estimates:
+      cor 
+0.3714034 
+
+>   #HeatMap
+>   BC <- BankChurners[order(BankChurners$Months_on_book),]
+>   row.names(BC) <- BankChurners$Card_Category
+Error in `.rowNamesDF<-`(x, value = value) : 
+  duplicate 'row.names' are not allowed
+In addition: Warning messages:
+1: Setting row names on a tibble is deprecated. 
+2: non-unique values when setting 'row.names': ‘Blue’, ‘Gold’, ‘Platinum’, ‘Silver’ 
+>   BC <- BankChurners[(2:20)]
+>   BC_matrix <- data.matrix(BC)
+>   BC_heatmap <- heatmap(BC_matrix, Rowv=NA, Colv=NA, col = heat.colors(256), scale="column", margins=c(5,10))
+corrplot 0.84 loaded
+> 
